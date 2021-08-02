@@ -3,9 +3,9 @@
     <div class="container">
       <h1>Brewery Finder</h1>
       <h2></h2>
-      <router-link v-bind:to="{ name: 'home' }">Home</router-link>
-      
-      &nbsp;<router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
+      <router-link class="home-logout" v-bind:to="{ name: 'home' }">Home</router-link>
+      <br>
+      &nbsp;<router-link class="home-logout" v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
     </div>
     <router-view />
   </div>
@@ -33,6 +33,7 @@ h1 {
 font-size: 600%;
 color: rgb(223, 145, 28);
 font-family: Century Gothic, Helvetica, sans-serif;
+filter: drop-shadow(5px 5px 4px black);
 }
 
 h2 {
@@ -40,6 +41,19 @@ h2 {
   color: azure;
 }
 
+.sr-only {
+  font-size: 100%;
+  color: white;
+}
+
+.home-logout{
+  color: white;
+  font-size: 150%;
+}
+
+p{
+  color: white;
+}
  
 
 

@@ -19,7 +19,18 @@ if(currentToken != null) {
 export default new Vuex.Store({
   state: {
     token: currentToken || '',
-    user: currentUser || {}
+    user: currentUser || {},
+    breweries: [],
+    brewery: {
+      brewery_id: '',
+      brewery_name: '',
+      website: '',
+      phone: '',
+      history: '',
+      image: '',
+      address: '',
+      days_and_hours_of_operation:''
+    }
   },
   mutations: {
     SET_AUTH_TOKEN(state, token) {
@@ -37,6 +48,9 @@ export default new Vuex.Store({
       state.token = '';
       state.user = {};
       axios.defaults.headers.common = {};
+    },
+    SET_BREWERIES(state, data){
+      state.breweries = data;
     }
   }
 })

@@ -3,16 +3,21 @@
     <div class="container">
       <h1>Brewery Finder</h1>
       <h2></h2>
-      <router-link class="home-logout" v-bind:to="{ name: 'home' }">Home</router-link>
+      <router-link class="highlight-white" v-bind:to="{ name: 'home' }">Home</router-link>
       <br>
-      &nbsp;<router-link class="home-logout" v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
+      &nbsp;<router-link class="highlight-white" v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-export default {};
+
+
+export default {
+
+
+};
 </script>
 
 <style>
@@ -46,7 +51,7 @@ h2 {
   color: white;
 }
 
-.home-logout{
+.highlight-white{
   color: white;
   font-size: 150%;
 }

@@ -23,7 +23,7 @@ body {
 
   background-image:url('~@/assets/images/Beer.jpg');
   background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
+  height: 100%; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -38,7 +38,7 @@ filter: drop-shadow(5px 5px 4px black);
 
 h2 {
   font-size: 300%;
-  color: azure;
+  color: white;
 }
 
 .sr-only {
@@ -55,6 +55,9 @@ p{
   color: white;
 }
  
+ .app{
+   
+ }
 
 
 </style>

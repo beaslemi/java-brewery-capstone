@@ -6,7 +6,7 @@
 </template>
 
 <script>
-//import breweryService from '../services/BreweryService';
+import breweryService from '../services/BreweryService';
 
 export default {
     data() {
@@ -22,7 +22,11 @@ export default {
 
   methods: {
 
-    retrieveBreweries() {},
+    retrieveBreweries() {
+        breweryService.getBreweries().then(response=>{
+            this.$store.commit("SET_BREWERIES", response.data);
+        })
+    },
      
     saveNewBrewery() {}
 

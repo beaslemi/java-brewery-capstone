@@ -40,7 +40,7 @@
       &nbsp;<button type="submit">Sign in</button>
       <br>
       <br>
-      <router-link :to="{ name: 'register' }" class="home-logout">Need an account?</router-link>
+      <router-link :to="{ name: 'register' }" class="highlight-white">Need an account?</router-link>
     </form>
   </div>
 </template>

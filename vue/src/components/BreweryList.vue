@@ -1,7 +1,7 @@
 <template>
   <div >
       <div v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" class="highlight-white">
-      {{ breweries }}
+      {{ breweries.name }}
       </div>
       <!--Brewery List goes here when connected to server!!!-->
   </div>

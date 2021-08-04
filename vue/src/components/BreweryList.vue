@@ -1,7 +1,9 @@
 <template>
-  <div class="highlight-white">
-      <router-link v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" >{{breweries}}</router-link>
-      Brewery List goes here when connected to server!!!
+  <div >
+      <div v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" class="highlight-white">
+      {{ breweries }}
+      </div>
+      <!--Brewery List goes here when connected to server!!!-->
   </div>
 </template>
 

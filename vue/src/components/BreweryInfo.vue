@@ -1,6 +1,12 @@
 <template>
   <div>
-      <!-- brewery info goes here -->
+      <div v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" class="highlight-white"></div>
+      {{breweries.name}}
+      {{breweries.website}}
+      {{breweries.phone}}
+      {{breweries.history}}
+      {{breweries.address}}
+      {{breweries.hoursOfOperation}} <!-- brewery info goes here -->
   </div>
 </template>
 

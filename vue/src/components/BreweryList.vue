@@ -28,9 +28,7 @@ export default {
         breweryService.getBreweries().then(response=>{
             this.$store.commit("SET_BREWERIES", response.data);
         })
-    },
-     
-    saveNewBrewery() {}
+    }
 
   }
 };

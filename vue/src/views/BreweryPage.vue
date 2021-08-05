@@ -3,7 +3,7 @@
     <span class="highlight-white">
     This is our brewery page!
     </span>
-    
+
   <div>
       <brewery-info/>
   </div>

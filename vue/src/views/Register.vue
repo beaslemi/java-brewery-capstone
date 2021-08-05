@@ -5,6 +5,14 @@
       <div class="alert alert-danger" role="alert" v-if="registrationErrors">
         {{ registrationErrorMsg }}
       </div>
+      <div>
+      <span class="highlight-white">I am a :</span>
+      <input type="checkbox" id="checkbox-brewer" v-model="checked" >
+      <span class="highlight-white">brewer</span>  
+      &nbsp;
+      <input type="checkbox" id="checkbox-beer-lover" v-model="checked" >
+      <span class="highlight-white">beer lover</span>
+      </div>
       <label for="username" class="sr-only">Username: </label>&nbsp;
       <input
         type="text"

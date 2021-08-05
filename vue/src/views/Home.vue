@@ -2,7 +2,7 @@
   <div class="home">
     <h1>Home</h1>
     
-      <button v-bind:to="{name: 'home'}">Add a Brewery</button>
+      <button v-bind:to="{name: 'brewery'}">Add a Brewery</button>
     
     <brewery-list/>
    <!-- <p>You must be authenticated to see this</p> -->

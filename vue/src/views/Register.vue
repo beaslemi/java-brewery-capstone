@@ -100,7 +100,7 @@ export default {
       this.registrationErrorMsg = 'There were problems registering this user.';
     },
   },
-  picked:null
+        picked:null
 };
 </script>
 

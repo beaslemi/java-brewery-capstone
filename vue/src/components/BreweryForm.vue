@@ -22,7 +22,7 @@
       </div>
       <div class="actions">
       <button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
-      &nbsp;<button>Submit</button>
+      &nbsp;<button>Add</button>
     </div>
       
 

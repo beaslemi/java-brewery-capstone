@@ -7,11 +7,11 @@
       </div>
       <div>
       <span class="highlight-white">I am a :</span>
-      <input type="checkbox" id="checkbox-brewer" v-model="checked" >
-      <span class="highlight-white">brewer</span>  
+      <input type="radio" id="brewer" class="radio-button" value="brewer" name="radio-brewer" v-model="picked">
+      <label for="brewer" class="highlight-white">Brewer</label>  
       &nbsp;
-      <input type="checkbox" id="checkbox-beer-lover" v-model="checked" >
-      <span class="highlight-white">beer lover</span>
+      <input type="radio" id="beer-lover" class="radio-button" value="beer-lover" name="radio-brewer" v-model="picked">
+      <label for="beer-lover"  class="highlight-white">Beer Lover</label>
       </div>
       <label for="username" class="sr-only">Username: </label>&nbsp;
       <input
@@ -57,6 +57,7 @@ import authService from '../services/AuthService';
 export default {
   name: 'register',
   data() {
+    
     return {
       user: {
         username: '',
@@ -67,6 +68,7 @@ export default {
       registrationErrors: false,
       registrationErrorMsg: 'There were problems registering this user.',
     };
+     
   },
   methods: {
     register() {
@@ -98,6 +100,7 @@ export default {
       this.registrationErrorMsg = 'There were problems registering this user.';
     },
   },
+  picked:null
 };
 </script>
 

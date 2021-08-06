@@ -26,7 +26,9 @@ export default {
 
     retrieveBreweries() {
         breweryService.getBreweries().then(response=>{
-            this.$store.commit("SET_BREWERIES", response.data);
+            if (response.status == 200){
+                this.$store.commit("SET_BREWERIES", response.data);
+            }
         })
     }
 

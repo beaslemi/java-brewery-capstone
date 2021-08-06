@@ -3,12 +3,11 @@
     <span class="highlight-white">
     This is our brewery page!
     </span>
-
-  <div>
-      <brewery-info/>
-  </div>
   <div>
       <brewery-form/>
+  </div>
+  <div>
+      <brewery-info/>
   </div>
   </div>
 </template>

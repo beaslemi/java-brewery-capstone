@@ -4,6 +4,9 @@
     <button>
       <router-link v-bind:to="{name: 'brewery'}">Add a Brewery</router-link>
     </button>
+    <button>
+      <router-link v-bind:to="{name: 'brewery'}">Update a Brewery</router-link>
+    </button>
     <brewery-list/>
    <!-- <p>You must be authenticated to see this</p> -->
   </div>

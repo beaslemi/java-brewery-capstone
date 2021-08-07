@@ -2,26 +2,26 @@
   <div class="app">
     <div class="container">
       <h1>Brewery Finder</h1>
-      <h2></h2>
-      <router-link class="highlight-white" v-bind:to="{ name: 'home' }">Home</router-link>
-      <br>
-      &nbsp;<router-link class="highlight-white" v-bind:to="{ name: 'logout' }" v-if="$store.state.token != ''">Logout</router-link>
-    </div>
-    <router-view />
+      <navigation/> 
+  </div>
   </div>
 </template>
 
 <script>
+import Navigation from './components/Navigation.vue';
 
 
 export default {
-
+components: {
+  Navigation
+}
 
 };
 </script>
 
 <style>
-body {
+
+Navigationbody {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -63,6 +63,9 @@ p{
  .app{
    
  }
-
+nav {
+  background: transparent;
+  
+}
 
 </style>

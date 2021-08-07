@@ -1,0 +1,52 @@
+<template>
+  <div class="nav">
+      <button>
+    <router-link v-bind:to="{ name: 'home' }"
+      >Home</router-link
+    > </button>
+    &nbsp;
+    
+      <button v-if="$store.state.token != ''">
+    <router-link
+      
+      v-bind:to="{ name: 'logout' }"
+      >Logout</router-link
+    > </button>
+ &nbsp;
+
+<button>
+    <router-link v-bind:to="{ name: 'brewery' }">
+      Brewery Information
+    </router-link>
+</button>
+&nbsp;
+
+<button v-if="$store.state.token != ''"> 
+    <router-link v-bind:to="{ name: 'add-brewery'}">
+        Add Brewery
+    </router-link>
+</button>
+&nbsp;
+
+<button v-if="$store.state.token != ''"> 
+    <router-link v-bind:to="{name: 'update-brewery'}">
+        Update Brewery
+    </router-link>
+        </button>
+
+    <router-view />
+  </div>
+</template>
+
+<script>
+export default {
+  name: "navigation",
+};
+</script>
+
+<style>
+.nav {
+    height: 100%;
+    background-image:url('~@/assets/images/Beer.jpg')
+}
+</style>

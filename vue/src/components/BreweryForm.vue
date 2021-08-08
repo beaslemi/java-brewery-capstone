@@ -21,22 +21,19 @@
         <textarea id="brewery-hours" v-model="newBrewery.hoursOfOperation"></textarea>
       </div>
       <div class="actions">
-      <button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
-      &nbsp;<button>Add</button>
+      &nbsp;<button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
+      &nbsp;<button  >Submit</button>
     </div>
-      
-
     </form>
 </template>
 
 <script>
-import breweryService from '../services/BreweryService';
+//import breweryService from '../services/BreweryService';
 
 export default {
 data() {
     return {
-      newBrewery: {
-        id:"",
+      brewery: {
         name:"",
         website:"",
         phone:"",
@@ -47,14 +44,60 @@ data() {
       };
   },
 
+ /* props: {
+    breweryID: {
+      type: Number,
+      default: 0
+    }
+  }, */
+
   methods: {
 
-    saveNewBrewery() {
-      breweryService.addBreweries().then(response=>{
-            this.$store.commit("SET_BREWERIES", response.data);
-            this.$router.push({name:'home'})
-        })
-    },
+  /*submitForm() {
+      const newBrewery = {
+        breweryId:Number(this.$route.params.breweryID),
+        name: this.card.name,
+        website: this.brewery.website,
+        phone: this.brewery.phone,
+        history: this.brewery.history,
+        address: this.brewery.address,
+        hoursOfOperation: this.brewery.hoursOfOperation
+      };
+
+      if (this.breweryID === 0) {
+        // add
+        breweryService
+          .addBrewery(newBrewery)
+          .then(response => {
+            if (response.status === 201) {
+              this.$router.push('/');
+            
+            }
+          })
+          .catch(error => {
+            this.handleErrorResponse(error, "adding");
+          });
+      } else {
+        // update
+        newBrewery.name = this.brewery.name;
+        newBrewery.website = this.brewery.website;
+        newBrewery.phone = this.brewery.phone;
+        newBrewery.history = this.brewery.history;
+        newBrewery.address = this.brewery.address;
+        newBrewery.hoursOfOperation = this.brewery.hoursOfOperation;
+        breweryService
+          .updateBrewery(newBrewery)
+          .then(response => {
+            if (response.status === 200) {
+              this.$router.push('/');
+            }
+          })
+          .catch(error => {
+            this.handleErrorResponse(error, "updating");
+          });
+      }
+    },*/
+    
     resetForm() {
       this.newBrewery = {};
     }

@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-      <button>
+      <button v-if="$store.state.token != ''">
     <router-link v-bind:to="{ name: 'home' }"
       >Home</router-link
     > </button>
@@ -14,7 +14,7 @@
     > </button>
  &nbsp;
 
-<button>
+<button v-if="$store.state.token != ''">
     <router-link v-bind:to="{ name: 'brewery' }">
       Brewery Information
     </router-link>

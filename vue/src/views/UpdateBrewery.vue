@@ -17,6 +17,8 @@ import BreweryForm from '@/components/BreweryForm';
 import BreweryInfo from '@/components/BreweryInfo';
 
 export default {
+props: ["show-update"],
+
 components: {
     BreweryForm,
     BreweryInfo

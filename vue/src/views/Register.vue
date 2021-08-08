@@ -7,10 +7,10 @@
       </div>
       <div>
       <span class="highlight-white">I am a :</span>
-      <input type="radio" id="brewer" class="radio-button" value="brewer" name="radio-brewer" v-model="picked">
+      <input type="radio" id="brewer" class="radio-button" value="brewer" name="radio-brewer" v-model="user.role">
       <label for="brewer" class="highlight-white">Brewer</label>  
       &nbsp;
-      <input type="radio" id="beer-lover" class="radio-button" value="beer-lover" name="radio-brewer" v-model="picked">
+      <input type="radio" id="beer-lover" class="radio-button" value="beer-lover" name="radio-brewer" v-model="user.role">
       <label for="beer-lover"  class="highlight-white">Beer Lover</label>
       </div>
       <label for="username" class="sr-only">Username: </label>&nbsp;
@@ -63,7 +63,7 @@ export default {
         username: '',
         password: '',
         confirmPassword: '',
-        role: 'user',
+        role: this.picked
       },
       registrationErrors: false,
       registrationErrorMsg: 'There were problems registering this user.',

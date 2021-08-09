@@ -2,23 +2,27 @@
     <form action="">
       <div class="form-element">
         <label for="brewery-name" class="highlight-white">Brewery Name: </label>
-        <input id="brewery-name" type="text" v-model="newBrewery.name">
+        <input id="brewery-name" type="text" v-model="brewery.name">
       </div>
       <div class="form-element">
         <label for="brewery-website" class="highlight-white">Website URL: </label>
-        <input id="brewery-website" type="text" v-model="newBrewery.website">
+        <input id="brewery-website" type="text" v-model="brewery.website">
       </div>
       <div class="form-element">
         <label for="brewery-phone" class="highlight-white">Phone: </label>
-        <input id="brewery-phone" type="text" v-model="newBrewery.phone">
+        <input id="brewery-phone" type="text" v-model="brewery.phone">
       </div>
       <div class="form-element">
         <label for="brewery-history" class="highlight-white">History: </label>
-        <textarea id="brewery-history" v-model="newBrewery.history"></textarea>
+        <textarea id="brewery-history" v-model="brewery.history"></textarea>
+      </div>
+      <div class="form-element">
+        <label for="brewery-address" class="highlight-white">Address: </label>
+        <textarea id="brewery-address" v-model="brewery.address"></textarea>
       </div>
       <div class="form-element">
         <label for="brewery-hours" class="highlight-white">Hours of Operation: </label>
-        <textarea id="brewery-hours" v-model="newBrewery.hoursOfOperation"></textarea>
+        <textarea id="brewery-hours" v-model="brewery.hoursOfOperation"></textarea>
       </div>
       <div class="actions">
       &nbsp;<button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
@@ -56,7 +60,7 @@ data() {
   submitForm() {
       const newBrewery = {
         breweryId:Number(this.$route.params.breweryID),
-        name: this.card.name,
+        name: this.brewery.name,
         website: this.brewery.website,
         phone: this.brewery.phone,
         history: this.brewery.history,
@@ -99,7 +103,7 @@ data() {
     },
     
     resetForm() {
-      this.newBrewery = {};
+      this.brewery = {};
     }
 
   },

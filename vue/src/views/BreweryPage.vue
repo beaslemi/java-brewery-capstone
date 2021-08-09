@@ -3,6 +3,11 @@
     <span class="highlight-white">
       <h1> Brewery Information</h1>
       <br />
+      <button v-if="$store.state.token != ''"> 
+    <router-link v-bind:to="{name: 'update-brewery'}">
+        Update Brewery
+    </router-link>
+        </button>
 
       
     </span>

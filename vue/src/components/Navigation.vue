@@ -14,12 +14,12 @@
     > </button>
  &nbsp;
 
-<button v-if="$store.state.token != ''">
+<!--<button v-if="$store.state.token != ''">
     <router-link v-bind:to="{ name: 'brewery' }">
       Brewery Information
     </router-link>
 </button>
-&nbsp;
+&nbsp;-->
 
 <button v-if="$store.state.token != ''"> 
     <router-link v-bind:to="{ name: 'add-brewery'}">
@@ -28,11 +28,7 @@
 </button>
 &nbsp;
 
-<button v-if="$store.state.token != ''"> 
-    <router-link v-bind:to="{name: 'update-brewery'}">
-        Update Brewery
-    </router-link>
-        </button>
+
 
     <router-view />
   </div>

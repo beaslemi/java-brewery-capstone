@@ -26,7 +26,7 @@
       </div>
       <div class="actions">
       &nbsp;<button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
-      &nbsp;<button v-on:click.prevent="submitForm">Submit</button>
+      &nbsp;<button v-on:click.prevent="createBrewery">Submit</button>
     </div>
     </form>
 </template>
@@ -57,7 +57,7 @@ data() {
 
   methods: {
 
-  submitForm() {
+  createBrewery() {
       const newBrewery = {
         breweryId:Number(this.$route.params.breweryID),
         name: this.brewery.name,
@@ -81,7 +81,7 @@ data() {
           .catch(error => {
             this.handleErrorResponse(error, "adding");
           });
-      } else {
+      } /*else {
         // update
         newBrewery.name = this.brewery.name;
         newBrewery.website = this.brewery.website;
@@ -99,7 +99,7 @@ data() {
           .catch(error => {
             this.handleErrorResponse(error, "updating");
           });
-      }
+      }*/
     },
     
     resetForm() {

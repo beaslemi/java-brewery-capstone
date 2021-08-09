@@ -3,9 +3,14 @@
     <span class="highlight-white">
       This is our brewery page!
       <br />
-      {{$route.params.breweryId}}
+      
     </span>
+ <div>
 
+{{brewery.name}}
+{{brewery.website}}
+
+ </div>
     <div>
       <!-- <brewery-info/> -->
     </div>
@@ -16,12 +21,16 @@
 //import BreweryInfo from "@/components/BreweryInfo";
 
 export default {
-  //components: {
-   // BreweryInfo,
- // },
-
-  name: "brewery-page",
+ name: "brewery-page",
+  
+  computed: {
+    brewery() {
+      console.log(`${this.$route.params.breweryId}`);
+      return this.$store.state.breweries.find(brewery => brewery.id === this.$route.params.breweryId);
+    },
+  }
 };
+
 </script>
 
 <style>

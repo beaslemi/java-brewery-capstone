@@ -8,11 +8,11 @@ export default {
     },
 
     addBrewery(brewery) {
-      return axios.post('/breweries', brewery);
+      return axios.post('/brewery', brewery);
     },
 
     updateBrewery(brewery, breweryID) {
-      return axios.put(`/breweries/${breweryID}`, brewery);
+      return axios.put(`/brewery/${breweryID}`, brewery);
     }
   
   }

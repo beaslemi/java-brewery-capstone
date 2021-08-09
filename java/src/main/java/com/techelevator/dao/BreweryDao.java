@@ -11,4 +11,7 @@ public interface BreweryDao {
     Brewery getBreweryById(int id);
 
 
+    Brewery createBrewery(Brewery brewery);
+
+    Brewery updateBrewery(Brewery brewery);
 }

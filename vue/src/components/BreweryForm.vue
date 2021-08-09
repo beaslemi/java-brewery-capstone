@@ -73,7 +73,7 @@ data() {
         breweryService
           .addBrewery(newBrewery)
           .then(response => {
-            if (response.status === 200) {
+            if (response.status == 201) {
               this.$router.push('/');
             
             }
@@ -92,7 +92,7 @@ data() {
         breweryService
           .updateBrewery(newBrewery)
           .then(response => {
-            if (response.status === 200) {
+            if (response.status == 200) {
               this.$router.push('/');
             }
           })

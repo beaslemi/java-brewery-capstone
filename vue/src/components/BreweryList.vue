@@ -1,8 +1,8 @@
 <template>
   <div >
-      <div v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" class="highlight-white">
-      {{ breweries.name }}
-      </div>
+      <router-link :to="{ name: 'brewery', params: { breweryId: breweries.id }}" v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" class="highlight-white">
+      {{ breweries.name }} <br>
+      </router-link>
       <!--Brewery List goes here when connected to server!!!-->
   </div>
 </template>

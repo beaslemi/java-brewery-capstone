@@ -22,10 +22,10 @@ public class JdbcBreweryDao implements BreweryDao{
     @Override
     public List<Brewery> findAll() {
         List<Brewery> breweries = new ArrayList<>();
-        String sql = "SELECT brewery_name FROM brewery";
+        String sql = "SELECT brewery_id, brewery_name, website, phone, history, image, address, days_and_hours_of_operation  FROM brewery";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while(results.next()) {
-            Brewery brewery = mapRowToBreweryName(results);
+            Brewery brewery = mapRowToBrewery(results);
             breweries.add(brewery);
         }
         return breweries;

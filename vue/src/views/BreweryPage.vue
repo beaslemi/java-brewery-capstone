@@ -3,11 +3,6 @@
     <span class="highlight-white">
       <h1> Brewery Information</h1>
       <br />
-      <button v-if="$store.state.token != ''"> 
-    <router-link v-bind:to="{name: 'update-brewery'}">
-        Update Brewery
-    </router-link>
-        </button>
 
       
     </span>
@@ -49,8 +44,8 @@ export default {
 
 h1 {
   background-color: rgba(0, 0, 0, 0.315);
-  color: white;
-  
+  color: rgb(223, 145, 0);
+   width: 800px;
 }
 
 h2 {

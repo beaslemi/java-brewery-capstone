@@ -29,7 +29,7 @@ Navigationbody {
 }
 
 body {
-   background-image:url('~@/assets/images/Beer.jpg');
+  background-image:url('~@/assets/images/Beer.jpg');
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 100%; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -70,5 +70,6 @@ nav {
   background: transparent;
   
 }
+
 
 </style>

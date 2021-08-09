@@ -1,7 +1,7 @@
 <template>
   <div>
       <div v-for="breweries in this.$store.state.breweries" v-bind:key="breweries.id" class="highlight-white">
-      {{breweries.website}} 
+      {{}} 
       <!--need to fix - brewery info not loading
       should we link to different update page or swap out components? if so how?-->
       </div>

@@ -1,14 +1,19 @@
 <template>
   <div>
     <span class="highlight-white">
-      This is our brewery page!
+      <h1> Brewery Information</h1>
       <br />
+
       
     </span>
  <div>
 
-{{brewery.name}}
-{{brewery.website}}
+<h2>{{brewery.name}}</h2>
+<h3>{{brewery.website}}</h3>
+<h3>{{brewery.address}}</h3>
+<h3>{{brewery.phone}}</h3>
+<h3>{{brewery.hoursOfOperation}}</h3>
+ <h3>{{brewery.history}}</h3>
 
  </div>
     <div>
@@ -18,9 +23,11 @@
 </template>
 
 <script>
+
 //import BreweryInfo from "@/components/BreweryInfo";
 
 export default {
+  
  name: "brewery-page",
   
   computed: {
@@ -34,4 +41,32 @@ export default {
 </script>
 
 <style>
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+  
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+  width: 1000px;
+  border: 1px solid whitesmoke;
+  text-overflow: ellipsis;
+  overflow: visible;
+  font: 2rem 'AmstelvarAlpha', sans-serif;
+  
+  
+}
+
+h3{
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+  width: 1000px;
+  border: 1px solid whitesmoke;
+  text-overflow: ellipsis;
+  overflow: visible;
+   font: 2rem 'AmstelvarAlpha', sans-serif;
+}
 </style>

@@ -26,7 +26,10 @@ Navigationbody {
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  background-image:url('~@/assets/images/Beer.jpg');
+}
+
+body {
+   background-image:url('~@/assets/images/Beer.jpg');
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 100%; /* You must set a specified height */
   background-position: center; /* Center the image */

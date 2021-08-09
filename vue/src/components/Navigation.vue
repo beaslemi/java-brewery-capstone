@@ -12,13 +12,6 @@
       v-bind:to="{ name: 'logout' }"
       >Logout</router-link
     > </button>
- &nbsp;
-
-<button v-if="$store.state.token != ''">
-    <router-link v-bind:to="{ name: 'brewery' }">
-      Brewery Information
-    </router-link>
-</button>
 &nbsp;
 
 <button v-if="$store.state.token != ''"> 
@@ -47,6 +40,6 @@ export default {
 <style>
 .nav {
     height: 100%;
-    background-image:url('~@/assets/images/Beer.jpg')
+    
 }
 </style>

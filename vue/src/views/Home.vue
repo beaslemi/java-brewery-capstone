@@ -17,11 +17,7 @@ components: {
 
   },
   methods: {
-    isBrewer(){
-      if(this.user.role == "brewer"){
-        return true;
-      }
-    }
+    
   },
 
   name: "home"

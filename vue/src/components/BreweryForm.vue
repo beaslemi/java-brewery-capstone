@@ -22,13 +22,13 @@
       </div>
       <div class="actions">
       &nbsp;<button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
-      &nbsp;<button  >Submit</button>
+      &nbsp;<button v-on:click.prevent="submitForm">Submit</button>
     </div>
     </form>
 </template>
 
 <script>
-//import breweryService from '../services/BreweryService';
+import breweryService from '../services/BreweryService';
 
 export default {
 data() {
@@ -44,16 +44,16 @@ data() {
       };
   },
 
- /* props: {
+  props: {
     breweryID: {
       type: Number,
       default: 0
     }
-  }, */
+  }, 
 
   methods: {
 
-  /*submitForm() {
+  submitForm() {
       const newBrewery = {
         breweryId:Number(this.$route.params.breweryID),
         name: this.card.name,
@@ -96,7 +96,7 @@ data() {
             this.handleErrorResponse(error, "updating");
           });
       }
-    },*/
+    },
     
     resetForm() {
       this.newBrewery = {};

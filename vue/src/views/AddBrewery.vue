@@ -6,22 +6,19 @@
   <div>
       <brewery-form/>
   </div>
-  <div>
-      <brewery-info/>
-  </div>
+ 
   </div>
 </template>
 
 <script>
 import BreweryForm from '@/components/BreweryForm';
-import BreweryInfo from '@/components/BreweryInfo';
+
 
 export default {
-props: ["show-add"],
 
 components: {
     BreweryForm,
-    BreweryInfo
+    
 
   },
 

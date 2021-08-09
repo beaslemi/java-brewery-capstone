@@ -3,9 +3,7 @@
     <span class="highlight-white">
     This is our brewery page!
     </span>
-  <div>
-      <brewery-form/>
-  </div>
+ 
   <div>
       <brewery-info/>
   </div>
@@ -13,12 +11,12 @@
 </template>
 
 <script>
-import BreweryForm from '@/components/BreweryForm';
+
 import BreweryInfo from '@/components/BreweryInfo';
 
 export default {
 components: {
-    BreweryForm,
+ 
     BreweryInfo
 
   },

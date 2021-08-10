@@ -15,7 +15,7 @@
     </button>
     &nbsp;
 
-    <button v-if="$store.state.token != ''">
+    <button v-if="isBrewer">
       <router-link v-bind:to="{ name: 'add-brewery' }">
         Add Brewery
       </router-link>
@@ -28,8 +28,19 @@
 
 <script>
 export default {
-  name: "navigation",
-};
+name: "navigation",
+
+computed:{
+  isBrewer(){
+    if (this.$store.state.user.authorities == undefined){
+      return false;
+    }else if (this.$store.state.user.authorities[0].name === "ROLE_BREWER"){
+      return true;
+      }
+      return false;
+    }
+  }
+}
 </script>
 
 <style>

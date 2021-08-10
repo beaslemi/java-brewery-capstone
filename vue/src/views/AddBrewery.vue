@@ -5,7 +5,7 @@
 
     </span>
   <div>
-      <brewery-form/>
+      <brewery-form />
   </div>
  
   </div>

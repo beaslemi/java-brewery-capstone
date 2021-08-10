@@ -4,7 +4,7 @@
       <h1> Brewery Information</h1>
       <br />
 <button v-if="isBrewer">
-      <router-link v-bind:to="{ name: 'update-brewery' }">
+      <router-link v-bind:to="{ name: 'update-brewery', params:{breweryId:brewery.id} }">
         Update Brewery
       </router-link>
     </button>
@@ -17,7 +17,7 @@
 <h3>{{brewery.address}}</h3>
 <h3>{{brewery.phone}}</h3>
 <h3>{{brewery.hoursOfOperation}}</h3>
- <h3>{{brewery.history}}</h3>
+<h3>{{brewery.history}}</h3>
 
  </div>
     <div>
@@ -39,6 +39,14 @@ export default {
       console.log(`${this.$route.params.breweryId}`);
       return this.$store.state.breweries.find(brewery => brewery.id === this.$route.params.breweryId);
     },
+    isBrewer(){
+    if (this.$store.state.user.authorities == undefined){
+      return false;
+    }else if (this.$store.state.user.authorities[0].name === "ROLE_BREWER"){
+      return true;
+      }
+      return false;
+    }
   }
 };
 

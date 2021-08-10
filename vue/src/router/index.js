@@ -74,7 +74,7 @@ const router = new Router({
       }
     },
     {
-      path: "/updateBrewery",
+      path: "/updateBrewery/:breweryId",
       name: "update-brewery",
       component: UpdateBrewery,
       meta: {

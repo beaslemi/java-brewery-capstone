@@ -44,14 +44,13 @@ export default {
 
 h1 {
   background-color: rgba(0, 0, 0, 0.315);
-  color: white;
+  color: rgb(223, 145, 0);
   
 }
 
 h2 {
   background-color: rgba(0, 0, 0, 0.315);
   color: white;
-  width: 1000px;
   border: 1px solid whitesmoke;
   text-overflow: ellipsis;
   overflow: visible;
@@ -63,7 +62,7 @@ h2 {
 h3{
   background-color: rgba(0, 0, 0, 0.315);
   color: white;
-  width: 1000px;
+  
   border: 1px solid whitesmoke;
   text-overflow: ellipsis;
   overflow: visible;

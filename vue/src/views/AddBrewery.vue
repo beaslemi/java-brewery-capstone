@@ -1,7 +1,8 @@
 <template>
 <div>
     <span class="highlight-white">
-    This is our add brewery page!
+         <h1>Add A Brewery</h1>
+
     </span>
   <div>
       <brewery-form/>

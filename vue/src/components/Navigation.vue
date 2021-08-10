@@ -1,31 +1,26 @@
 <template>
   <div class="nav">
-      <button v-if="$store.state.token != ''">
-    <router-link v-bind:to="{ name: 'home' }"
-      >Home</router-link
-    > </button>
+    <button v-if="$store.state.token != ''">
+      <router-link v-bind:to="{ name: 'home' }">Home</router-link>
+    </button>
     &nbsp;
-    
-      <button v-if="$store.state.token != ''">
-    <router-link
-      
-      v-bind:to="{ name: 'logout' }"
-      >Logout</router-link
-    > </button>
-&nbsp;
 
-<button v-if="$store.state.token != ''"> 
-    <router-link v-bind:to="{ name: 'add-brewery'}">
+    <button v-if="$store.state.token != ''">
+      <router-link v-bind:to="{ name: 'logout' }">Logout</router-link>
+    </button>
+    &nbsp;
+
+    <button v-if="$store.state.token != ''">
+      <router-link v-bind:to="{ name: 'beers' }">Beers</router-link>
+    </button>
+    &nbsp;
+
+    <button v-if="$store.state.token != ''">
+      <router-link v-bind:to="{ name: 'add-brewery' }">
         Add Brewery
-    </router-link>
-</button>
-&nbsp;
-
-<button v-if="$store.state.token != ''"> 
-    <router-link v-bind:to="{name: 'update-brewery'}">
-        Update Brewery
-    </router-link>
-        </button>
+      </router-link>
+    </button>
+    &nbsp;
 
     <router-view />
   </div>
@@ -39,7 +34,7 @@ export default {
 
 <style>
 .nav {
-    height: 100%;
-    
+  height: 100%;
+   text-align: center;
 }
 </style>

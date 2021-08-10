@@ -71,6 +71,8 @@ p{
   color: white;
 }
  
+<<<<<<< HEAD
+=======
  .app{
    
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -80,6 +82,7 @@ p{
   color: #2c3e50;
   margin: 60px;
  }
+>>>>>>> c80f9f49c6b4435017021321dad2acac51180836
 nav {
   background: transparent;
   

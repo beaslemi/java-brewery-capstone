@@ -63,9 +63,6 @@ p{
   color: white;
 }
  
- .app{
-   
- }
 nav {
   background: transparent;
   

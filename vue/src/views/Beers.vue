@@ -39,50 +39,60 @@
       </h3>
 
       <h1>Rhinegeist Brewery</h1>
-      <h3>Name</h3>
-      <h3>Image</h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3> 
+      <h3>ANDROMEDA</h3>
+      <h3><img src="~@/assets/images/Pale-Ale_-2-117x200.png" /></h3>
+      <h3>
+        Brewed once upon a time, in a galaxy not so far away. Andromeda Pale Ale
+        casts a constellation of interstellar hop flavor, illuminating the
+        palate with notes of peach, mandarin, and freshly cut grass. Pay heed to
+        the heavens before indulging — a hop shower cometh.
+      </h3>
+      <h3>ABV: 5.7%</h3>
+      <h3>PALE ALE</h3>
       <h3>
         <input
           type="button"
-          onClick="location.href='https://www.artifactbeer.com/beer/'"
+          onClick="location.href='https://rhinegeist.com/beer/'"
           value="Click Here For Full Beer List"
         />
       </h3>
 
       <h1>Darkness Brewing</h1>
-      <h3>Name</h3>
-      <h3>Image</h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
+      <h3>Tugg Speedman</h3>
+      <h3><img src="~@/assets/images/GMwKIalm_400x400.jpg" /></h3>
+      <h3>
+        Jucy and easy to drink session (lower alcohol) brewed with Sabro, El Dorado, and Mosaic hops for a wonderfully refreshing summer IPA
+      </h3>
+      <h3>4.8% ABV</h3>
+      <h3>Session IPA</h3>
       <h3>
         <input
           type="button"
-          onClick="location.href='https://www.artifactbeer.com/beer/'"
+          onClick="location.href='http://darknessbrewing.beer/#beer'"
           value="Click Here For Full Beer List"
         />
       </h3>
 
       <h1>Bircus Brewing Company</h1>
-      <h3>Name</h3>
-      <h3>Image</h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
+      <h3>Juggleoats</h3>
+      <h3><img src="~@/assets/images\upload_vwaPtL-squareMedium.png" /></h3>
+      <h3>
+        For our newest IPA launch we packed Juggleoats with over 30% flaked oats for a creamy, smooth drinking Oatmeal IPA. A blend of 4 hop varieties bring a pleasant and well balanced bitterness to this unique, milky beer. We serve on Nitro to further enhance the mouthfeel of this beer.
+        NO LACTOSE!
+      </h3>
+      <h3>6.2% ABV 60 IBU</h3>
+      <h3>American IPA</h3>
       <h3>
         <input
           type="button"
-          onClick="location.href='https://www.artifactbeer.com/beer/'"
+          onClick="location.href='https://bircus.com/whats-on-tap/'"
           value="Click Here For Full Beer List"
         />
       </h3>
 
       <h1>Fifty West Brewing Company</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -96,7 +106,7 @@
 
       <h1>Brink Brewing Co</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -110,7 +120,7 @@
 
       <h1>Fretboard Brewing Company</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -122,9 +132,9 @@
         />
       </h3>
 
-      <h1>HighGrain Brewing Co </h1>
+      <h1>HighGrain Brewing Co</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -138,7 +148,7 @@
 
       <h1>March First Brewing and Distilling</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -150,10 +160,9 @@
         />
       </h3>
 
-      
       <h1>West Side Brewing</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -165,10 +174,9 @@
         />
       </h3>
 
-      
       <h1>MadTree Brewing</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -179,10 +187,10 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-      
+
       <h1>Rolling Mill Brewing Company</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -194,10 +202,9 @@
         />
       </h3>
 
-      
       <h1>Listermann Brewing Company</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -209,10 +216,9 @@
         />
       </h3>
 
-      
       <h1>Braxton Brewing Company</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -223,10 +229,10 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-      
+
       <h1>Big Ash Brewing</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -238,9 +244,9 @@
         />
       </h3>
 
-       <h1>Little Miami Brewing Company</h1>
+      <h1>Little Miami Brewing Company</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -252,9 +258,9 @@
         />
       </h3>
 
-       <h1>Tafts Ale House</h1>
+      <h1>Tafts Ale House</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -266,9 +272,9 @@
         />
       </h3>
 
-       <h1>Streetside Brewery</h1>
+      <h1>Streetside Brewery</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>
@@ -280,9 +286,9 @@
         />
       </h3>
 
-       <h1>3 Points Urban Brewery</h1>
+      <h1>3 Points Urban Brewery</h1>
       <h3>Name</h3>
-      <h3>Image</h3>
+      <h3><img src="" /></h3>
       <h3>Description</h3>
       <h3>ABV</h3>
       <h3>Beer Type</h3>

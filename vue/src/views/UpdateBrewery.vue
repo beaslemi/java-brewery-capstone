@@ -1,8 +1,10 @@
 <template>
 <div>
     <span class="highlight-white">
-    This is our update brewery page!
+    <br/>
+    Update brewery information here
     </span>
+   
   <div>
       <brewery-form/>
   </div>

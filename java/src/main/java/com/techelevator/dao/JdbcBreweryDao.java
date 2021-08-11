@@ -52,7 +52,7 @@ public class JdbcBreweryDao implements BreweryDao{
                 "SET brewery_name = ?, website = ?, phone = ?, history = ?, address = ?, days_and_hours_of_operation = ? " +
                 "WHERE brewery_id = ?;";
         jdbcTemplate.update(sql, brewery.getName(), brewery.getWebsite(), brewery.getPhone(),
-                brewery.getHistory(), brewery.getAddress(), brewery.getHoursOfOperation());
+                brewery.getHistory(), brewery.getAddress(), brewery.getHoursOfOperation(), brewery.getId());
         return getBreweryById(brewery.getId());
     }
 

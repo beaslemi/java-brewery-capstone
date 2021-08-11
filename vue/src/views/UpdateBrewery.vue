@@ -1,25 +1,24 @@
 <template>
 <div>
     <span class="highlight-white">
-    <br/>
-    Update brewery information here
+  <h1>Update Brewery</h1>    
     </span>
    
   <div>
-      <brewery-form/>
+      <update-form/>
   </div>
  
   </div>
 </template>
 
 <script>
-import BreweryForm from '@/components/BreweryForm';
+import UpdateForm from '@/components/UpdateForm';
 
 
 export default {
 
 components: {
-    BreweryForm,
+    UpdateForm,
 
 
   },

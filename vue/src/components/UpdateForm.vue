@@ -26,8 +26,7 @@
       </div>
       <div class="actions">
       &nbsp;<button v-on:click.prevent="resetForm" type="cancel">Cancel</button>&nbsp;
-      &nbsp;<button v-on:click.prevent="createBrewery" >Add Brewery</button>
-      
+      &nbsp;<button v-on:click.prevent="reviseBrewery" >Update Brewery</button>
     </div>
     </form>
 </template>
@@ -43,45 +42,38 @@ data() {
       };
   },
 
-
-  props: {
-    
-    breweryID: {
-      type: Number,
-      default: 0
-    },
-    
-  }, 
+created(){
+  console.log(`in brewery with ${this.$route.params.breweryId}`);
+  this.brewery = this.$store.state.breweries.find(brewery =>{
+    if(this.$route.params.breweryId == brewery.id){
+      return true;
+    } return false;
+    } 
+  );
+},
 
   methods: {
 
-  createBrewery() {
-      const newBrewery = {
-        breweryId:Number(this.$route.params.breweryID),
-        name: this.brewery.name,
-        website: this.brewery.website,
-        phone: this.brewery.phone,
-        history: this.brewery.history,
-        address: this.brewery.address,
-        hoursOfOperation: this.brewery.hoursOfOperation
-      };
-
-      if (this.breweryID === 0) {
-        // add
+  reviseBrewery() {
+      let brewery = {};
+        brewery.id = this.$route.params.breweryId;
+        brewery.name = this.brewery.name;
+        brewery.website = this.brewery.website;
+        brewery.phone = this.brewery.phone;
+        brewery.history = this.brewery.history;
+        brewery.address = this.brewery.address;
+        brewery.hoursOfOperation = this.brewery.hoursOfOperation;
         breweryService
-          .addBrewery(newBrewery)
+          .updateBrewery(brewery, this.$route.params.breweryId)
           .then(response => {
-            if (response.status == 201) {
+            if (response.status == 200) {
               this.$router.push('/');
-            
             }
           })
           .catch(error => {
-            this.handleErrorResponse(error, "adding");
+            this.handleErrorResponse(error, "updating");
           });
-      } 
-    },
- 
+        }    
         
       },
     
@@ -91,7 +83,7 @@ data() {
 
   
 
-  name: "brewery-form"
+  name: "update-form"
 
 };
 </script>

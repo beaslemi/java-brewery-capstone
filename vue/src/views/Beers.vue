@@ -8,7 +8,7 @@
       <h3>THE GADGET</h3>
       <h3>
         <img
-          src="~@/assets/images/ddb54c4e150f31442d898ad207058094_640x640.jpg"
+          src="~@/assets/images/ddb54c4e150f31442d898ad207058094_640x640 (1).jpg"
         />
       </h3>
       <h3>
@@ -297,39 +297,39 @@
       </h3>
 
       <h1>Big Ash Brewing</h1>
-      <h3>Name</h3>
-      <h3><img src="" /></h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
+      <h3>Big Buck Nuts</h3>
+      <h3><img src="~@/assets/images/d5ba3dcf16f62956a413b5c3e2c1eff9_640x640.jpg" /></h3>
+      <h3>Big Buck Nuts is a rich, full bodied, chocolaty, and malty American brown ale that is bursting with pecan and caramel flavor to give a delightfully nutty taste.</h3>
+      <h3>4.9% ABV</h3>
+      <h3>American Brown Ale</h3>
       <h3>
         <input
           type="button"
-          onClick="location.href='https://www.artifactbeer.com/beer/'"
+          onClick="location.href='https://www.bigashbrewing.com/food-drink'"
           value="Click Here For Full Beer List"
         />
       </h3>
 
       <h1>Little Miami Brewing Company</h1>
-      <h3>Name</h3>
-      <h3><img src="" /></h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
+      <h3>Batch 420 IPA</h3>
+      <h3><img src="~@/assets/images/459bddcef0c813e081db373aaece6288_640x640.jpeg" /></h3>
+      <h3>Brewed with citiva hops and New England style yeast</h3>
+      <h3>10% ABV</h3>
+      <h3>IPA</h3>
       <h3>
         <input
           type="button"
-          onClick="location.href='https://www.artifactbeer.com/beer/'"
+          onClick="location.href='https://www.bigashbrewing.com/food-drink'"
           value="Click Here For Full Beer List"
         />
       </h3>
 
       <h1>Tafts Ale House</h1>
-      <h3>Name</h3>
-      <h3><img src="" /></h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
+      <h3>Frish's Pumpkin Pie Ale</h3>
+      <h3><img src="~@/assets/images/Frischs.png" /></h3>
+      <h3>The two biggest boys of Cincinnati have come together for one special beer. Hints of cinnamon, ginger, and nutmeg combine with lactose and vanilla for a smooth, creamy finish.</h3>
+      <h3>6.0 % ABV</h3>
+      <h3>Ale</h3>
       <h3>
         <input
           type="button"
@@ -339,31 +339,23 @@
       </h3>
 
       <h1>Streetside Brewery</h1>
-      <h3>Name</h3>
-      <h3><img src="" /></h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
+      <h3>Raspberry Beret</h3>
+      <h3><img src="~@/assets/images/x3q7z4v8pcn21.jpg" /></h3>
+      <h3>Raspberry Berliner Weisse</h3>
+      <h3>4.5 % ABV</h3>
+      <h3>Weisse</h3>
       <h3>
         <input
           type="button"
-          onClick="location.href='https://streetsidebrewery.com/'"
+          onClick="location.href='https://streetsidebrewery.com/beers/'"
           value="Click Here For Full Beer List"
         />
       </h3>
 
       <h1>3 Points Urban Brewery</h1>
-      <h3>Name</h3>
-      <h3><img src="" /></h3>
-      <h3>Description</h3>
-      <h3>ABV</h3>
-      <h3>Beer Type</h3>
-      <h3>
-        <input
-          type="button"
-          onClick="location.href=''"
-          value="Click Here For Full Beer List"
-        />
+      <h3><img src="~@/assets/images/Cincy Finder.png" /></h3>
+    
+        <h3>Three Points operated a brewery and taproom in the Pendleton area of OTR from 2018-2020 when they closed during the CoronaVirus shutdown, never to reopen.  Their taproom is set to be replaced by Braxton’s Cincinnati taproom in the fall of 2020.
       </h3>
     </span>
 

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class JdbcBreweryDao implements BreweryDao{
+public class JdbcBreweryDao implements BreweryDao {
 
     private JdbcTemplate jdbcTemplate;
 
@@ -24,7 +24,7 @@ public class JdbcBreweryDao implements BreweryDao{
         List<Brewery> breweries = new ArrayList<>();
         String sql = "SELECT brewery_id, brewery_name, website, phone, history, image, address, days_and_hours_of_operation  FROM brewery";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-        while(results.next()) {
+        while (results.next()) {
             Brewery brewery = mapRowToBrewery(results);
             breweries.add(brewery);
         }
@@ -39,7 +39,7 @@ public class JdbcBreweryDao implements BreweryDao{
     @Override
     public Brewery createBrewery(Brewery brewery) {
         String sql = "INSERT INTO brewery (brewery_name, website, phone, history, address, days_and_hours_of_operation) " +
-                    "VALUES (?, ?, ?, ?, ?, ?) RETURNING brewery_id;";
+                "VALUES (?, ?, ?, ?, ?, ?) RETURNING brewery_id;";
         int newId = jdbcTemplate.queryForObject(sql, Integer.class,
                 brewery.getName(), brewery.getWebsite(), brewery.getPhone(), brewery.getHistory(), brewery.getAddress(), brewery.getHoursOfOperation());
 

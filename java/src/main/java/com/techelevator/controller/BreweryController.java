@@ -1,4 +1,5 @@
 package com.techelevator.controller;
+
 import com.techelevator.dao.BreweryDao;
 import com.techelevator.dao.UserDao;
 import com.techelevator.model.Brewery;
@@ -19,18 +20,18 @@ public class BreweryController {
     }
 
     @RequestMapping(path = "/breweries", method = RequestMethod.GET)
-    public List<Brewery> breweries(){
+    public List<Brewery> breweries() {
         return breweryDao.findAll();
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @RequestMapping(path = "/brewery", method = RequestMethod.POST)
-    public Brewery addBrewery(@Valid @RequestBody Brewery brewery){
+    public Brewery addBrewery(@Valid @RequestBody Brewery brewery) {
         return breweryDao.createBrewery(brewery);
     }
 
     @RequestMapping(path = "/brewery/{id}", method = RequestMethod.PUT)
-    public Brewery updateBrewery(@PathVariable int id, @Valid @RequestBody Brewery brewery){
+    public Brewery updateBrewery(@PathVariable int id, @Valid @RequestBody Brewery brewery) {
         return breweryDao.updateBrewery(brewery);
     }
 

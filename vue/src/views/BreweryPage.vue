@@ -1,20 +1,20 @@
 <template>
   <div>
+    <br />
     <span class="highlight-white">
       <h1>Brewery Information</h1>
       <br />
-      <button v-if="isBrewer">
-        <router-link
-          v-bind:to="{
-            name: 'update-brewery',
-            params: { breweryId: brewery.id },
-          }"
-        >
-          Update Brewery
-        </router-link>
-      </button>
+      <router-link
+        v-bind:to="{
+          name: 'update-brewery',
+          params: { breweryId: brewery.id },
+        }"
+      >
+        <button class="rounded" v-if="isBrewer">Update Brewery</button>
+      </router-link>
     </span>
     <div>
+      <br>
       <h2>{{ brewery.name }}</h2>
       <h3>{{ brewery.website }}</h3>
       <h3>{{ brewery.address }}</h3>
@@ -55,11 +55,13 @@ export default {
 
 <style>
 h1 {
+  
   background-color: rgba(0, 0, 0, 0.315);
   color: rgb(223, 145, 0);
 }
 
 h2 {
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.315);
   color: white;
   border: 1px solid whitesmoke;
@@ -69,6 +71,7 @@ h2 {
 }
 
 h3 {
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.315);
   color: white;
 

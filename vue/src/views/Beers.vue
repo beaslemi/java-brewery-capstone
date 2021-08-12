@@ -1,7 +1,8 @@
 <template>
   <div>
+    <br>
     <span class="highlight-white">
-      <h4>Featured Beers</h4>
+      <h1>Featured Beers</h1>
       <br />
 
       <h1>Urban Artifact</h1>
@@ -24,7 +25,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Fibonacci Brewing Company</h1>
       <h3>The Tollhouse</h3>
       <h3>
@@ -45,7 +46,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Rhinegeist Brewery</h1>
       <h3>ANDROMEDA</h3>
       <h3>
@@ -66,7 +67,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Darkness Brewing</h1>
       <h3>Tugg Speedman</h3>
       <h3>
@@ -87,7 +88,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Bircus Brewing Company</h1>
       <h3>Juggleoats</h3>
       <h3><img src="~@/assets/images/Juggleoats-01.jpg" /></h3>
@@ -107,7 +108,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Fifty West Brewing Company</h1>
       <h3>Doom Pedal</h3>
       <h3>
@@ -130,7 +131,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Brink Brewing Co</h1>
       <h3>No Way In Helles</h3>
       <h3>
@@ -152,7 +153,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Fretboard Brewing Company</h1>
       <h3>Rockin The Rhein</h3>
       <h3><img src="~@/assets/images/442388.jpg" /></h3>
@@ -166,7 +167,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>HighGrain Brewing Co</h1>
       <h3>Titan</h3>
       <h3>
@@ -187,7 +188,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>March First Brewing and Distilling</h1>
       <h3>CRAFT LAGER</h3>
       <h3><img src="~@/assets/images/Craft-Lager.jpeg" /></h3>
@@ -205,7 +206,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>West Side Brewing</h1>
       <h3>Barleywine</h3>
       <h3><img src="~@/assets/images/westside-image-beer-barleywine.jpg" /></h3>
@@ -225,7 +226,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>MadTree Brewing</h1>
       <h3>Katlyn's Lolo Tango</h3>
       <h3>
@@ -248,7 +249,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Rolling Mill Brewing Company</h1>
       <h3>Two Goldens</h3>
       <h3><img src="~@/assets/images/RollingMill_web_5.jpg" /></h3>
@@ -265,7 +266,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Listermann Brewing Company</h1>
       <h3>
         I've Had It With These Motherf****** IPAs At This Motherf****** Brewery
@@ -285,7 +286,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Braxton Brewing Company</h1>
       <h3>SUMMERTRIP</h3>
       <h3><img src="~@/assets/images/Braxton-Summertrip-2.jpg" /></h3>
@@ -304,7 +305,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Big Ash Brewing</h1>
       <h3>Big Buck Nuts</h3>
       <h3>
@@ -326,7 +327,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Little Miami Brewing Company</h1>
       <h3>Batch 420 IPA</h3>
       <h3>
@@ -344,7 +345,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Tafts Ale House</h1>
       <h3>Frish's Pumpkin Pie Ale</h3>
       <h3><img src="~@/assets/images/Frischs.png" /></h3>
@@ -362,7 +363,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>Streetside Brewery</h1>
       <h3>Raspberry Beret</h3>
       <h3><img src="~@/assets/images/x3q7z4v8pcn21.jpg" /></h3>
@@ -376,7 +377,7 @@
           value="Click Here For Full Beer List"
         />
       </h3>
-
+<br>
       <h1>3 Points Urban Brewery</h1>
       <h3><img src="~@/assets/images/Cincy Finder.png" /></h3>
 

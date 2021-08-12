@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <span class="highlight-white">
       <h1>Update Brewery</h1>
     </span>

@@ -60,7 +60,7 @@
       <router-link :to="{ name: 'login' }" class="highlight-white"
         >Have an account?</router-link
       >&nbsp;
-      <button class="btn btn-lg btn-primary btn-block" type="submit">
+      <button class="rounded" type="submit">
         Create Account
       </button>
     </form>

@@ -1,25 +1,21 @@
 <template>
-  <div class="nav">
-    <button v-if="$store.state.token != ''">
-      <router-link v-bind:to="{ name: 'home' }">Home</router-link>
-    </button>
+  <div class="nav-x">
+    <br>
+    <router-link v-bind:to="{ name: 'home' }">
+      <button class="rounded" v-if="$store.state.token != ''">Home</button>
+    </router-link>
     &nbsp;
-
-    <button v-if="$store.state.token != ''">
-      <router-link v-bind:to="{ name: 'logout' }">Logout</router-link>
-    </button>
+    <router-link v-bind:to="{ name: 'logout' }">
+      <button class="rounded" v-if="$store.state.token != ''">Logout</button>
+    </router-link>
     &nbsp;
-
-    <button v-if="$store.state.token != ''">
-      <router-link v-bind:to="{ name: 'beers' }">Beers</router-link>
-    </button>
+    <router-link v-bind:to="{ name: 'beers' }">
+      <button class="rounded" v-if="$store.state.token != ''">Beers</button>
+    </router-link>
     &nbsp;
-
-    <button v-if="isBrewer">
-      <router-link v-bind:to="{ name: 'add-brewery' }">
-        Add Brewery
-      </router-link>
-    </button>
+    <router-link v-bind:to="{ name: 'add-brewery' }">
+      <button class="rounded" v-if="isBrewer">Add Brewery</button>
+    </router-link>
     &nbsp;
 
     <router-view />

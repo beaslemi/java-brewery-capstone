@@ -6,12 +6,26 @@
         {{ registrationErrorMsg }}
       </div>
       <div>
-      <span class="highlight-white">I am a :</span>
-      <input type="radio" id="brewer" class="radio-button" value="brewer" name="radio-brewer" v-model="user.role">
-      <label for="brewer" class="highlight-white">Brewer</label>  
-      &nbsp;
-      <input type="radio" id="beer-lover" class="radio-button" value="beer-lover" name="radio-brewer" v-model="user.role">
-      <label for="beer-lover"  class="highlight-white">Beer Lover</label>
+        <span class="highlight-white">I am a :</span>
+        <input
+          type="radio"
+          id="brewer"
+          class="radio-button"
+          value="brewer"
+          name="radio-brewer"
+          v-model="user.role"
+        />
+        <label for="brewer" class="highlight-white">Brewer</label>
+        &nbsp;
+        <input
+          type="radio"
+          id="beer-lover"
+          class="radio-button"
+          value="beer-lover"
+          name="radio-brewer"
+          v-model="user.role"
+        />
+        <label for="beer-lover" class="highlight-white">Beer Lover</label>
       </div>
       <label for="username" class="sr-only">Username: </label>&nbsp;
       <input
@@ -23,7 +37,7 @@
         required
         autofocus
       />
-      <br>
+      <br />
       <label for="password" class="sr-only">Password: </label>&nbsp;
       <input
         type="password"
@@ -42,8 +56,10 @@
         v-model="user.confirmPassword"
         required
       />
-      <br>
-      <router-link :to="{ name: 'login' }" class="highlight-white">Have an account?</router-link>&nbsp;
+      <br />
+      <router-link :to="{ name: 'login' }" class="highlight-white"
+        >Have an account?</router-link
+      >&nbsp;
       <button class="btn btn-lg btn-primary btn-block" type="submit">
         Create Account
       </button>
@@ -52,37 +68,35 @@
 </template>
 
 <script>
-import authService from '../services/AuthService';
+import authService from "../services/AuthService";
 
 export default {
-  name: 'register',
+  name: "register",
   data() {
-    
     return {
       user: {
-        username: '',
-        password: '',
-        confirmPassword: '',
-        role: this.picked
+        username: "",
+        password: "",
+        confirmPassword: "",
+        role: this.picked,
       },
       registrationErrors: false,
-      registrationErrorMsg: 'There were problems registering this user.',
+      registrationErrorMsg: "There were problems registering this user.",
     };
-     
   },
   methods: {
     register() {
       if (this.user.password != this.user.confirmPassword) {
         this.registrationErrors = true;
-        this.registrationErrorMsg = 'Password & Confirm Password do not match.';
+        this.registrationErrorMsg = "Password & Confirm Password do not match.";
       } else {
         authService
           .register(this.user)
           .then((response) => {
             if (response.status == 201) {
               this.$router.push({
-                path: '/login',
-                query: { registration: 'success' },
+                path: "/login",
+                query: { registration: "success" },
               });
             }
           })
@@ -90,17 +104,17 @@ export default {
             const response = error.response;
             this.registrationErrors = true;
             if (response.status === 400) {
-              this.registrationErrorMsg = 'Bad Request: Validation Errors';
+              this.registrationErrorMsg = "Bad Request: Validation Errors";
             }
           });
       }
     },
     clearErrors() {
       this.registrationErrors = false;
-      this.registrationErrorMsg = 'There were problems registering this user.';
+      this.registrationErrorMsg = "There were problems registering this user.";
     },
   },
-        picked:null
+  picked: null,
 };
 </script>
 

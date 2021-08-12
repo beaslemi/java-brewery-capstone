@@ -1,33 +1,25 @@
 <template>
-<div>
-    <span class="highlight-white">
-         <h1>Add A Brewery</h1>
-
-    </span>
   <div>
+    <span class="highlight-white">
+      <h1>Add A Brewery</h1>
+    </span>
+    <div>
       <brewery-form />
-  </div>
- 
+    </div>
   </div>
 </template>
 
 <script>
-import BreweryForm from '@/components/BreweryForm';
-
+import BreweryForm from "@/components/BreweryForm";
 
 export default {
-
-components: {
+  components: {
     BreweryForm,
-    
-
   },
 
-  name: "add-brewery"
+  name: "add-brewery",
 };
-
 </script>
 
 <style>
-
 </style>

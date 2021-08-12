@@ -28,24 +28,24 @@
 
 <script>
 export default {
-name: "navigation",
+  name: "navigation",
 
-computed:{
-  isBrewer(){
-    if (this.$store.state.user.authorities == undefined){
-      return false;
-    }else if (this.$store.state.user.authorities[0].name === "ROLE_BREWER"){
-      return true;
+  computed: {
+    isBrewer() {
+      if (this.$store.state.user.authorities == undefined) {
+        return false;
+      } else if (this.$store.state.user.authorities[0].name === "ROLE_BREWER") {
+        return true;
       }
       return false;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style>
 .nav {
   height: 100%;
-   text-align: center;
+  text-align: center;
 }
 </style>

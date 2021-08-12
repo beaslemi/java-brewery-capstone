@@ -12,7 +12,7 @@ Vue.use(Vuex)
 const currentToken = localStorage.getItem('token')
 const currentUser = JSON.parse(localStorage.getItem('user'));
 
-if(currentToken != null) {
+if (currentToken != null) {
   axios.defaults.headers.common['Authorization'] = `Bearer ${currentToken}`;
 }
 
@@ -29,7 +29,7 @@ export default new Vuex.Store({
       history: '',
       image: '',
       address: '',
-      days_and_hours_of_operation:''
+      days_and_hours_of_operation: ''
     }
   },
   mutations: {
@@ -40,7 +40,7 @@ export default new Vuex.Store({
     },
     SET_USER(state, user) {
       state.user = user;
-      localStorage.setItem('user',JSON.stringify(user));
+      localStorage.setItem('user', JSON.stringify(user));
     },
     LOGOUT(state) {
       localStorage.removeItem('token');
@@ -49,7 +49,7 @@ export default new Vuex.Store({
       state.user = {};
       axios.defaults.headers.common = {};
     },
-    SET_BREWERIES(state, data){
+    SET_BREWERIES(state, data) {
       state.breweries = data;
     }
   }
